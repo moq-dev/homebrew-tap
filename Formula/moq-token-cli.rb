@@ -1,36 +1,32 @@
 class MoqTokenCli < Formula
   desc "JWT token generator and validator for moq-relay"
   homepage "https://moq.dev"
-  version "0.5.32"
+  version "0.5.44"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-token-cli-v#{version}/moq-token-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "ffb1ec10c1a37d627d3c476862d7852b207d28020cfb6c77f9080f33a5d8c8ab"
-    end
-    on_intel do
-      url "https://github.com/moq-dev/moq/releases/download/moq-token-cli-v#{version}/moq-token-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "20c204cbac05e8fc2f2e941a0e0a0c74a815fb47a8caeb2f8354be2c49ad2398"
+      sha256 "95ef69fe3c5060f004245f71c704eff32e3c8bb62b1820333ac3668abb3d824d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-token-cli-v#{version}/moq-token-cli-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8064aed5ecc0bf7694c22abde997fe70d23db956cf9387c7799a760c6412e6a9"
+      sha256 "0e7055eb5509aed4945b4f8e3dfdaf4520aaf74c11fe63fb9309f9d09ee440ef"
     end
     on_intel do
       url "https://github.com/moq-dev/moq/releases/download/moq-token-cli-v#{version}/moq-token-cli-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3df927fefc46f3c024a14061ed028fc058b76c74cdf94a70456597750975ef11"
+      sha256 "5062878156e1c4f2525a84ba878e271608e3928f7f164071b742e0df53987628"
     end
   end
 
   def install
-    bin.install "bin/moq-token-cli"
+    bin.install "bin/moq-token"
   end
 
   test do
-    system bin/"moq-token-cli", "--help"
+    system bin/"moq-token", "--help"
   end
 end
