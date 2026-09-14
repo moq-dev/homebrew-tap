@@ -5,7 +5,7 @@ Homebrew formulae for the [moq](https://github.com/moq-dev/moq) workspace.
 ```bash
 brew tap moq-dev/tap
 brew install moq-dev/tap/moq-relay
-brew install moq-dev/tap/moq-cli
+brew install moq-dev/tap/moq
 brew install moq-dev/tap/moq-clock
 brew install moq-dev/tap/moq-token
 brew install moq-dev/tap/moq-gst
