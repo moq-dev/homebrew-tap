@@ -1,24 +1,24 @@
 class MoqRelay < Formula
   desc "Clusterable relay server for Media over QUIC"
   homepage "https://moq.dev"
-  version "0.14.17"
+  version "0.14.18"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-relay-v#{version}/moq-relay-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d8189f1628f9681807deae5e772f92d0ee3c1a08d5b0ace27ff00371125434a0"
+      sha256 "4ac8e7e5304bc95e4a7aee953cc5dd9002a98f5870f8b91c534ea4e331c7fd18"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-relay-v#{version}/moq-relay-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2072a85ab4f34f749a8f96bb0b16337d53261396a01ee9929adbe59c89cfacde"
+      sha256 "fe9df7cb65a69979004e1a111aea9087e25da379fa0e04ff3bed30da7a0394bf"
     end
     on_intel do
       url "https://github.com/moq-dev/moq/releases/download/moq-relay-v#{version}/moq-relay-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "492d3fd67d0bba8dadeb6719ba7f8fdcc9b2c4b64f3f00d0c7185557006c1777"
+      sha256 "640e88f83fa167d8e2be8ea001efb7180b4b8ed34b1744e7c92df227e72da2be"
     end
   end
 
