@@ -1,24 +1,24 @@
 class Moq < Formula
   desc "CLI for publishing and subscribing to Media over QUIC broadcasts"
   homepage "https://moq.dev"
-  version "0.12.0"
+  version "0.12.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-cli-v#{version}/moq-cli-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b89f2454e67c24711e740315b90c06870d7f5c71b37fb1daf778a9a1f2ac66d8"
+      sha256 "392a26e1ab19d58aaca457fad1e8df9676a572c73a460eed3e8beaa449384966"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-cli-v#{version}/moq-cli-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e80ee0d5764847bb13c4996c27be32f07ce65bd56fdc24a08e6f69998d185feb"
+      sha256 "a9f587f6cbb99db097f8552e1c39de8892855b2704c3685932a4d31a583182f3"
     end
     on_intel do
       url "https://github.com/moq-dev/moq/releases/download/moq-cli-v#{version}/moq-cli-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9bf896e57b46a76c337d969b0c7e847eedde401521f707d7bc0964daed30c045"
+      sha256 "56c016de43847ef1990c82001cbf4174f09450994154813c73bb9cd02cb6302b"
     end
   end
 
