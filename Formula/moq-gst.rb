@@ -1,7 +1,7 @@
 class MoqGst < Formula
   desc "GStreamer plugin for publishing and subscribing to Media over QUIC"
   homepage "https://moq.dev"
-  version "0.4.25"
+  version "0.4.26"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on "gstreamer"
@@ -9,18 +9,18 @@ class MoqGst < Formula
   on_macos do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-gst-v#{version}/moq-gst-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "060952973fb41582536eb37284803f11407fff3c32d6b4dddc9801f3839b3fb5"
+      sha256 "cc68463385042546406d38255277dc680870962a0f30aa1177c77f9d48dc922f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/moq-dev/moq/releases/download/moq-gst-v#{version}/moq-gst-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b11b57073094737c4d8b2d43d739c362fc3f1f17ce593c71f8c656865d63b498"
+      sha256 "22db0212fcc82c2e84cc2be37b34d9a2bd6fb3f09421ba08bff787514742ae37"
     end
     on_intel do
       url "https://github.com/moq-dev/moq/releases/download/moq-gst-v#{version}/moq-gst-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6faad8ab0805ce4bce3d4d326ffe8bb75142b841236e8a956ed5c04f042abf17"
+      sha256 "9a0cbfffef1ebb802dc40c104177ee8a91e49dc277a8ba864a1720b9f4a42171"
     end
   end
 
